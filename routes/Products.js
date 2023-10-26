@@ -9,9 +9,9 @@ const {
 const router = express.Router();
 //  /products is already added in base path
 router
+  .post("/", createProduct)
   .get("/", fetchAllProducts)
   .get("/:id", fetchProductById)
-  .post("/", createProduct)
   .patch("/:id", updateProduct);
 
 exports.router = router;
