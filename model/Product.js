@@ -14,6 +14,7 @@ const productSchema = new Schema({
     min: [1, "Wrong min discount"],
     max: [99, "Wrong max discount"],
   },
+  discountPrice: { type: Number },
   rating: {
     type: Number,
     min: [0, "Wrong min rating"],
