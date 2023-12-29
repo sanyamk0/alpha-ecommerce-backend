@@ -25,9 +25,7 @@ const path = require("path");
 const { Order } = require("./model/Order");
 
 // Webhook
-// TODO: we will capture actual order after deploying out server live on public URL
 const endpointSecret = process.env.ENDPOINT_SECRET;
-
 server.post(
   "/webhook",
   express.raw({ type: "application/json" }),
